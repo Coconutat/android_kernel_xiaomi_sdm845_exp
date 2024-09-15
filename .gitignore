@@ -133,6 +133,7 @@ Android.bp
 !techapck/
 
 # KernelSU
+KernelSU
 drivers/kernelsu
 kernel_log-*.txt
 Image.gz*
