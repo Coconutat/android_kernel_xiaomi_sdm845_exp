@@ -2,7 +2,7 @@
 #设置环境
 
 # 交叉编译器路径
-export PATH=$PATH:$(pwd)/../Compiler/ZyC_Clang_18/bin
+export PATH=$PATH:$(pwd)/../Compiler/proton-clang/bin
 export CC=clang
 export CLANG_TRIPLE=aarch64-linux-gnu-
 export CROSS_COMPILE=aarch64-linux-gnu-
@@ -22,7 +22,7 @@ start_time_sum=$(date +%s)
 
 make ARCH=arm64 O=out CC=clang ursa_xiaomi_sdm845_ksu_defconfig
 # 定义编译线程数
-make ARCH=arm64 O=out CC=clang -j24 2>&1 | tee kernel_log-${start_time}.txt
+make ARCH=arm64 O=out CC=clang -j24 2>&1 | tee kernel_log-${start_time}.log
 
 end_time_sum=$(date +%s)
 

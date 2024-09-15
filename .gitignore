@@ -135,5 +135,5 @@ Android.bp
 # KernelSU
 KernelSU
 drivers/kernelsu
-kernel_log-*.txt
+kernel_log-*.log
 Image.gz*
